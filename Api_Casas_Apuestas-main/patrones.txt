@@ -1,0 +1,25 @@
+Los distintos tipos de patrones se identificaran en este fichero.
+Pondremos el archivo.py(carpeta del archivo)
+Los 8 diferentes patrones son:
+
+-COMMAND:
+
+-FACTORY_METHOD: -logger.py(utils)
+
+-DECORATOR: -decorators.py(services)
+            -validate_apuesta.py(validate)
+            -validate_cliente.py(validate)
+            -validate_cuota.py(validate)
+            -validate_equipo.py(validate)
+            -validate_partido.py(validate)
+
+-ADAPTER: -repositoriopartido.py(repositories)
+
+-OBSERVER:
+
+-STRATEGY:
+
+-SINGLETON: -decorators.py(services)
+            -singleton.py(utils)
+
+-ABSTRACT_FACTORY: -apuesta.py(services)
