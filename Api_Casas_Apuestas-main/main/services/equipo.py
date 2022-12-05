@@ -29,6 +29,6 @@ class EquipoService:
 
     def verificar_equipo_local(self, objeto):
         return repositorio.verify_equipo_local(objeto)
-    
+
     def verificar_equipo_visitante(self, objeto):
         return repositorio.verify_equipo_visitante(objeto)

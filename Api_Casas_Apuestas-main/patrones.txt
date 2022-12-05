@@ -55,3 +55,11 @@ Los 8 diferentes patrones son:
             - \repositories\repositorioapuesta.py (@abstractmethod)
             - \repositories\repositoriobase.py (@abstractmethod)
             - \utils\logger.py (@abstractmethod)
+
+
+
+
+
+
+
+creo que todos los que tienen que ver con marshmallow son decoradores pero no lo sé seguro (\map)
