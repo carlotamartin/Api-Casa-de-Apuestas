@@ -13,6 +13,23 @@ Los 8 diferentes patrones son:
             -validate_equipo.py(validate)
             -validate_partido.py(validate)
 
+
+            - \repositories\repositorio.py (@propierty)
+            - \repositories\repositoriocliente.py (@propierty)
+            - \repositories\repositoriocuota.py (@propierty)
+            - \repositories\repositorioempresa.py (@propierty)
+            - \repositories\repositorioequipo.py (@propierty)
+            - \repositories\repositoriopartido.py (@propierty)
+
+
+            -\models\apuesta.py (@hybrid_property)
+            -\models\cliente.py (@hybrid_property)
+            -\models\cuota.py (@hybrid_property)
+            -\models\empresa.py (@hybrid_property)
+            -\models\equipo.py (@hybrid_property)
+            -\models\partido.py (@hybrid_property)
+
+
 -ADAPTER: -repositoriopartido.py(repositories)
 
 -OBSERVER:
@@ -21,5 +38,8 @@ Los 8 diferentes patrones son:
 
 -SINGLETON: -decorators.py(services)
             -singleton.py(utils)
+            -\repositories\repositorioapuesta.py (@singleton_pattern.singleton)
 
--ABSTRACT_FACTORY: -apuesta.py(services)
+-ABSTRACT_FACTORY:
+            -apuesta.py(services)
+            - \repositories\repositorioapuesta.py (@abstractmethod)

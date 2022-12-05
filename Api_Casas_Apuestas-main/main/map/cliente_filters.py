@@ -2,7 +2,7 @@ from main.models.cliente import Cliente
 from main.models import ClienteModel
 
 class ClienteFilters():
-    
+
     def __init__(self, cliente):
         self.__cliente = cliente
         self.__filters = {

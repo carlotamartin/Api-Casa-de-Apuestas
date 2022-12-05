@@ -9,7 +9,7 @@ from sqlalchemy import or_
 singleton_pattern = SingletonPattern()
 
 @singleton_pattern.singleton
-class ApuestaRepositorio(Create, Read): 
+class ApuestaRepositorio(Create, Read):
 
     def __init__(self):
         self.__modelo = ApuestaModel
@@ -37,13 +37,11 @@ class ApuestaRepositorio(Create, Read):
             filters = request.get_json().items()
             for key, value in filters:
                 if key == 'cliente_id':
-                    objetos = objetos.filter(self.modelo.cliente_id == value)    
+                    objetos = objetos.filter(self.modelo.cliente_id == value)
         return objetos
 
     def create(self, objeto):
         db.session.add(objeto)
         db.session.commit()
-        return objeto    
-
-    
+        return objeto
 
