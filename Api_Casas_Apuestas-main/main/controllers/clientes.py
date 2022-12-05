@@ -7,7 +7,7 @@ from main.map import ClienteSchema, ClienteFilters
 cliente_schema = ClienteSchema()
 
 class Cliente(Resource):
-    
+
     def get(self, id):
         cliente = db.session.query(ClienteModel).get_or_404(id)
         return cliente_schema.dump(cliente), 201

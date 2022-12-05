@@ -36,7 +36,7 @@ class Apuesta(db.Model):
         self.__fecha = fecha
     @fecha.deleter
     def fecha(self):
-        del self.__fecha  
+        del self.__fecha
 
 
 
@@ -47,7 +47,7 @@ class Apuesta(db.Model):
     @monto.setter
     def monto(self, monto):
         self.__monto = monto
-    
+
     @monto.deleter
     def monto(self):
         del self.__monto
@@ -59,11 +59,11 @@ class Apuesta(db.Model):
     @monto_minimo.setter
     def monto_minimo(self, monto):
         self.__monto_minimo = monto
-    
+
     @monto_minimo.deleter
     def monto_minimo(self):
         del self.__monto_minimo
-    
+
     @hybrid_property
     def equipo_ganador_id(self):
         return self.__equipo_ganador_id
@@ -72,7 +72,7 @@ class Apuesta(db.Model):
         self.__equipo_ganador_id = id
     @equipo_ganador_id.deleter
     def equipo_ganador_id(self):
-        del self.__equipo_ganador_id   
+        del self.__equipo_ganador_id
 
     @hybrid_property
     def partido_id(self):
