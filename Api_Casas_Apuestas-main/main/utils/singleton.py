@@ -1,6 +1,6 @@
 
 
-class SingletonPattern():    
+class SingletonPattern():
 
     @staticmethod
     def singleton(cls):

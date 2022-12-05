@@ -12,4 +12,4 @@ class ValidateCuota():
                     return function(*args, **kwargs)
                 return 'Cuota no encontrada', 404
             return wrapper
-        return decorator 
+        return decorator

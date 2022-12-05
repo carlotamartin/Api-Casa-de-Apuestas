@@ -32,7 +32,7 @@ class PartidoRepositorio(Create, Read, Delete, Update):
         db.session.commit()
         return objeto
 
-    
+
     def update(self, objeto):
         db.session.add(objeto)
         db.session.commit()

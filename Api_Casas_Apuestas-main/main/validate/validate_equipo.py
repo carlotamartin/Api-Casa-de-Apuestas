@@ -15,7 +15,7 @@ class ValidateEquipo():
                 return function(*args, **kwargs)
             return wrapper
         return decorator
-    
+
     def validar_equipo(self, objeto):
         def decorator(function):
             def wrapper(*args, **kwargs):
@@ -35,5 +35,3 @@ class ValidateEquipo():
 
     def validar_equipo_empate(self, objeto):
         pass
-        
-            

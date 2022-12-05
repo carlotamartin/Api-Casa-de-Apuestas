@@ -36,7 +36,7 @@ class Cliente(Resource):
 
 
 class Clientes(Resource):
-    
+
     def get(self):
         clientes = db.session.query(ClienteModel)
         cliente_filters = ClienteFilters(clientes)

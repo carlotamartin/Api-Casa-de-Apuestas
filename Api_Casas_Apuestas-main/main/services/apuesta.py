@@ -1,5 +1,5 @@
 from main.map import ApuestaSchema
-from main.repositories.repositorioapuesta import ApuestaRepositorio 
+from main.repositories.repositorioapuesta import ApuestaRepositorio
 from main.repositories.repositoriocuota import CuotaRepositorio
 from abc import ABC
 

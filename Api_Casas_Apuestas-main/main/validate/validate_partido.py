@@ -23,6 +23,6 @@ class ValidatePartido():
                     return 'Partido finalizado', 404
                 return function(*args, **kwargs)
             return wrapper
-        return decorator 
+        return decorator
 
 
