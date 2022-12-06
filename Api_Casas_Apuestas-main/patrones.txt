@@ -1,10 +1,9 @@
 Los distintos tipos de patrones se identificaran en este fichero.
-Pondremos el archivo.py(carpeta del archivo)
 Los 8 diferentes patrones son:
 
 -COMMAND:
 
--FACTORY_METHOD:
+-FACTORY_METHOD: \utils\logger.py
 
 -DECORATOR: - \services\decorators.py( @property)
             - \validate\validate_apuesta.py( @property)
@@ -40,21 +39,20 @@ Los 8 diferentes patrones son:
             - \controllers\partidos.py (@validate_partido.validar_partido())
             - \controllers\partidos.py (@validate_equipo.validar_equipos())
 
--ADAPTER: - \repositories\repositoriopartido.py(repositories)
+-ADAPTER: - \repositories\repositoriopartido.py
 
 -OBSERVER:
 
 -STRATEGY:
 
--SINGLETON: - \services\decorators.py(services)
-            - \utils\singleton.py( @staticmethod)
+-SINGLETON: - \services\decorators.py
+            - \utils\singleton.py(@staticmethod)
             - \repositories\repositorioapuesta.py (@singleton_pattern.singleton)
 
 -ABSTRACT_FACTORY:
-            - \services\apuesta.py(services)
+            - \services\apuesta.py
             - \repositories\repositorioapuesta.py (@abstractmethod)
             - \repositories\repositoriobase.py (@abstractmethod)
-            - \utils\logger.py (@abstractmethod)
 
 
 
