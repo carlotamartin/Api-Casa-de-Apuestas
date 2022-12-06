@@ -7,7 +7,7 @@ class CuotaRepositorio(Read, Create):
 
     def __init__(self):
         self.__modelo = CuotaModel
-    
+
     @property
     def modelo(self):
         return self.__modelo
@@ -29,4 +29,4 @@ class CuotaRepositorio(Read, Create):
         db.session.commit()
         return objeto
 
-    
+

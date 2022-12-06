@@ -43,5 +43,4 @@ class ClienteRepositorio(Create, Read, Delete, Update):
 
     def soft_delete(self, objeto, id):
         return self.__soft_delete(objeto, id)
-    
 

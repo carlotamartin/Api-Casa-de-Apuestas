@@ -8,7 +8,7 @@ class EquipoRepositorio(Create, Read, Update, Delete):
 
     def __init__(self):
         self.__modelo = EquipoModel
-    
+
     @property
     def modelo(self):
         return self.__modelo
