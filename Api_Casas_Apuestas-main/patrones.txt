@@ -55,9 +55,20 @@ Los 8 diferentes patrones son:
             - \repositories\repositoriobase.py (@abstractmethod)
 
 
+-Builder (constructor):
+            -/models/apuesta.py(.setter, .deleter)
+            -/models/cliente.py(.setter, .deleter)
+            -/models/cuota.py(.setter, .deleter)
+            -/models/empresa.py(.setter, .deleter)
+            -/models/equipo.py(.setter, .deleter)
+            -/models/partido.py(.setter, .deleter)
 
 
 
 
 
+
+
+he peusto los setter y deleter como builders no sé si estará bn
 creo que todos los que tienen que ver con marshmallow son decoradores pero no lo sé seguro (\map)
+eso yo creo que algo tienen que ver con la clase ABSTRACT_FACTORY
