@@ -41,7 +41,13 @@ Los 8 diferentes patrones son:
 
 -ADAPTER: - \repositories\repositoriopartido.py
 
--OBSERVER:
+-QUERY OBJECT (Patrón estructural): -\controllers\apuesta.py
+                                    -\controllers\clientes.py
+                                    -\controllers\cuota.py
+                                    -\controllers\partidos.py
+
+
+-OBSERVER:  -\mail\functions.py
 
 -STRATEGY:
 
