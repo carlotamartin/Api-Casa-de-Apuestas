@@ -46,10 +46,21 @@ Los 8 diferentes patrones son:
                                     -\controllers\cuota.py
                                     -\controllers\partidos.py
 
+-Data Access Object (DAO)(Patrón estructural):  -\models\apuesta.py
+                                                -\models\cliente.py
+                                                -\models\couta.py
+                                                -\models\empresa.py
+                                                -\models\equipo.py
+                                                -\models\partido.py
+
+                                                -\repositories\repositoriocliente.py
+                                                -\repositories\repositorioempresa.py
+                                                -\repositories\repositorioequipo.py
+                                                -\repositories\repositoriopartido.py
 
 -OBSERVER:  -\mail\functions.py
 
--STRATEGY:
+-STRATEGY:  -\services\apuesta.py (CuotaStrategy())
 
 -SINGLETON: - \services\decorators.py
             - \utils\singleton.py(@staticmethod)
@@ -75,6 +86,13 @@ Los 8 diferentes patrones son:
 
 
 
-he peusto los setter y deleter como builders no sé si estará bn
+he peusto los setter y deleter como builders no sé si estará bn: 
+
+creo que en repositorios, las funciones CRUD de dentro de pueden calificar como DAO por esta info (no estoy segura):
+https://www.baeldung.com/java-dao-pattern
+
+
+
+
 creo que todos los que tienen que ver con marshmallow son decoradores pero no lo sé seguro (\map)
 eso yo creo que algo tienen que ver con la clase ABSTRACT_FACTORY
