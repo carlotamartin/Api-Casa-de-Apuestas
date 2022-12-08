@@ -27,17 +27,27 @@ Los 8 diferentes patrones son:
             - \models\empresa.py (@hybrid_property)
             - \models\equipo.py (@hybrid_property)
             - \models\partido.py (@hybrid_property)
+
             - \validate\validate_apuesta.py\validate_apuesta (@validate_cliente.validar_cliente())
             - \validate\validate_apuesta.py\validate_apuesta (@validate_equipo.validar_equipo())
             - \validate\validate_apuesta.py\validate_apuesta (@self.validar_monto())
             - \validate\validate_apuesta.py\validate_apuesta (@validate_partido.validar_partido())
             - \validate\validate_apuesta.py\validate_apuesta (@validate_partido.validar_partido_finalizado())
+
             - \controllers\apuesta.py (@validate_apuesta.validar_apuesta_existe())
             - \controllers\apuesta.py (@validate_apuesta.validar_apuesta())
             - \controllers\cuota.py(@validate_cuota.validar_cuota())
             - \controllers\equipos.py (@validate_equipo.validar_equipos())
             - \controllers\partidos.py (@validate_partido.validar_partido())
             - \controllers\partidos.py (@validate_equipo.validar_equipos())
+
+            -\map\apuesta_schema.py(@post_load, @post_dump)
+            -\map\cliente_schema.py(@post_load)
+            -\map\cuota_schema.py(@post_load, @post_dump)
+            -\map\empresa_schema.py(@post_load)
+            -\map\equipo_schema.py(@post_load, @post_dump)
+            -\map\partido_schema.py(@post_load, @post_dump)
+
 
 -ADAPTER: - \repositories\repositoriopartido.py
 
@@ -85,14 +95,3 @@ Los 8 diferentes patrones son:
 
 
 
-
-he peusto los setter y deleter como builders no sé si estará bn: 
-
-creo que en repositorios, las funciones CRUD de dentro de pueden calificar como DAO por esta info (no estoy segura):
-https://www.baeldung.com/java-dao-pattern
-
-
-
-
-creo que todos los que tienen que ver con marshmallow son decoradores pero no lo sé seguro (\map)
-eso yo creo que algo tienen que ver con la clase ABSTRACT_FACTORY
